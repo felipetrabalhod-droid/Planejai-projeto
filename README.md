@@ -23,6 +23,19 @@ O Planej.ai permite que o usuário informe sua renda, gastos e objetivo financei
 - Google Gemini API
 - LocalStorage
 
+## Configurar a IA
+
+1. Crie uma chave no [Google AI Studio](https://aistudio.google.com/apikey).
+2. Crie um arquivo `.env` na raiz do projeto, baseado em `.env.example`:
+
+```env
+VITE_GEMINI_API_KEY=sua_chave_real_aqui
+```
+
+3. Reinicie o servidor com `pnpm dev` depois de alterar o `.env`.
+
+O arquivo `.env` não deve ser enviado ao GitHub.
+
 ## Como executar o projeto
 
 1. Clone o repositório:
@@ -63,11 +76,17 @@ Como evolução do projeto base, foi adicionada uma **página de Histórico de S
 
 ## Capturas de tela
 
-> Adicione aqui os prints da aplicação.
+### Tela inicial
 
-- Tela inicial
-- Resultado da IA
-- Histórico de simulações
+![Tela inicial](public/prints/home.png)
+
+### Resultado da IA
+
+![Resultado](public/prints/resultado.png)
+
+### Histórico
+
+![Histórico](public/prints/historico.png)
 
 ## Aprendizados
 

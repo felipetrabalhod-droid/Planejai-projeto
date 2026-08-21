@@ -32,8 +32,10 @@ export interface InsightData {
 }
 
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY?.trim()
-const MODEL_NAME = 'gemini-flash-latest'
-const GEMINI_API_URL = API_KEY
+const HAS_VALID_API_KEY =
+  Boolean(API_KEY) && !API_KEY?.includes('cole_sua_chave')
+const MODEL_NAME = 'gemini-flash-lite-latest'
+const GEMINI_API_URL = HAS_VALID_API_KEY
   ? `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${API_KEY}`
   : null
 
