@@ -5,7 +5,7 @@ import type { SimulationRecord } from './simulation'
 
 const RESPONSE_SCHEMA = `{
   "feasibility": {
-    "status": "viable" | "needs_adjustment" | "unfeasible",
+    "status": "viable",
     "content": "<Análise objetiva sobre se a meta é atingível no prazo com o valor disponível. Mencione os números relevantes.>"
   },
   "diagnosis": {
