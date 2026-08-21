@@ -82,11 +82,11 @@ Como evolução do projeto base, foi adicionada uma **página de Histórico de S
 
 ### Resultado da IA
 
-![Resultado](public/prints/resultado.png)
+![Resultado da IA](public/prints/resultado.png)
 
-### Histórico
+### Histórico de simulações
 
-![Histórico](public/prints/historico.png)
+![Histórico de simulações](public/prints/historico.png)
 
 ## Aprendizados
 
