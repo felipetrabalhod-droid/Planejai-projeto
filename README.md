@@ -1,32 +1,81 @@
-# React + TypeScript + Vite
+# Planej.ai – Educador Financeiro Inteligente
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicação web desenvolvida com **React**, **TypeScript**, **Vite** e **Google Gemini IA** para ajudar usuários a fazer um planejamento financeiro de forma simples e personalizada.
 
-Currently, two official plugins are available:
+## Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O Planej.ai permite que o usuário informe sua renda, gastos e objetivo financeiro. Com essas informações, a inteligência artificial gera um diagnóstico personalizado com sugestões práticas para melhorar o planejamento financeiro.
 
-## React Compiler
+## Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Preenchimento de dados financeiros.
+- Geração de insights com IA (Google Gemini).
+- Interface moderna com React e Tailwind CSS.
+- Tema claro e escuro.
+- Histórico de simulações salvo no navegador (localStorage).
 
-## Expanding the Oxlint configuration
+## Tecnologias utilizadas
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Google Gemini API
+- LocalStorage
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Como executar o projeto
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/felipetrabalhod-droid/Planejai-projeto.git
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+2. Entre na pasta do projeto:
+
+```bash
+cd Planejai-projeto
+```
+
+3. Instale as dependências:
+
+```bash
+npm install
+```
+
+4. Inicie a aplicação:
+
+```bash
+npm run dev
+```
+
+## Como testar
+
+1. Abra a aplicação no navegador.
+2. Preencha sua renda, gastos e objetivo financeiro.
+3. Clique em gerar análise.
+4. Leia as recomendações geradas pela IA.
+5. Acesse a página **Histórico** para visualizar as simulações salvas.
+
+## Melhoria implementada
+
+Como evolução do projeto base, foi adicionada uma **página de Histórico de Simulações**, onde todas as análises geradas são armazenadas automaticamente utilizando **localStorage**, permitindo consultar resultados anteriores mesmo após atualizar a página.
+
+## Capturas de tela
+
+> Adicione aqui os prints da aplicação.
+
+- Tela inicial
+- Resultado da IA
+- Histórico de simulações
+
+## Aprendizados
+
+Durante este desafio pratiquei:
+
+- Desenvolvimento com React e TypeScript.
+- Organização de componentes.
+- Gerenciamento de estado.
+- Integração com IA Generativa.
+- Persistência de dados com localStorage.
+- Estruturação de um projeto para portfólio.
